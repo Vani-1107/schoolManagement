@@ -12,7 +12,7 @@ import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-4 py-4 bg-gradient-to-r from-cyan-200 to-cyan-100 shadow-md">
+    <nav className="w-full fixed flex items-center justify-between px-4 py-4 bg-gradient-to-r from-cyan-200 to-cyan-100">
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <img src="path/to/logo.png" alt="Logo" className="h-8" />

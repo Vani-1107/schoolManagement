@@ -53,7 +53,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 bg-gray-50 h-screen p-4 overflow-y-auto">
+    <div className="fixed left-0 w-64 mt-16 bg-gray-50 h-screen p-4 overflow-y-auto">
       <div className="text-md mb-4">Main</div>
 
       <div className="space-y-2">
@@ -75,7 +75,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <MdRemoveShoppingCart className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Inventory</span>
+            <span className="text-md font-bold">Inventory</span>
           </div>
           <span className="text-gray-500">
             {openSections.inventory ? "-" : "+"}
@@ -95,7 +95,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FaRegCreditCard className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Subscription</span>
+            <span className="text-md font-bold">Subscription</span>
           </div>
           <span className="text-gray-500">
             {openSections.subscription ? "-" : "+"}
@@ -115,7 +115,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <TbWorldWww className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Custom Domain</span>
+            <span className="text-md font-bold">Custom Domain</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -135,7 +135,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FaFingerprint className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">2 FA Security</span>
+            <span className="text-md font-bold">2 FA Security</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -153,7 +153,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FaGlobe className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Frontend</span>
+            <span className="text-md font-bold">Frontend</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -171,7 +171,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FaUsers className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Reception</span>
+            <span className="text-md font-bold">Reception</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -189,7 +189,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FaRegPenToSquare className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Admission</span>
+            <span className="text-md font-bold">Admission</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -207,7 +207,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-2">
             <GiGraduateCap className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Student Details</span>
+            <span className="text-md font-bold">Student Details</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -225,7 +225,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <TiUserAdd className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Parents</span>
+            <span className="text-md font-bold">Parents</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -243,7 +243,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FaUsers className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Employee</span>
+            <span className="text-md font-bold">Employee</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -261,7 +261,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <IoClipboardOutline className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Card Management</span>
+            <span className="text-md font-bold">Card Management</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -279,7 +279,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <AiOutlineSpotify className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Certificate</span>
+            <span className="text-md font-bold">Certificate</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -296,8 +296,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <MdOutlineScreenshotMonitor  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Human Resource</span>
+            <MdOutlineScreenshotMonitor className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Human Resource</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -314,8 +314,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <IoHomeOutline className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Academic</span>
+            <IoHomeOutline className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Academic</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -332,8 +332,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <SlEarphonesAlt className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Live Class Rooms</span>
+            <SlEarphonesAlt className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Live Class Rooms</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -350,8 +350,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <IoCloudDownloadOutline  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Attachments Book</span>
+            <IoCloudDownloadOutline className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Attachments Book</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -368,8 +368,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <FaRegPenToSquare className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Homework</span>
+            <FaRegPenToSquare className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Homework</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -386,8 +386,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <VscBook className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Exam Master</span>
+            <VscBook className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Exam Master</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -404,8 +404,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <SlScreenDesktop  className="text-yellow-500" />
-            <span  className="text-md font-bold">Online Exam</span>
+            <SlScreenDesktop className="text-yellow-500" />
+            <span className="text-md font-bold">Online Exam</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -422,8 +422,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <CiWifiOn  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Supervision</span>
+            <CiWifiOn className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Supervision</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -440,8 +440,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <VscGraph  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Attendance</span>
+            <VscGraph className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Attendance</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -458,8 +458,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <FaQrcode  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Qr Code Attendance</span>
+            <FaQrcode className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Qr Code Attendance</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -476,8 +476,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <BsJournalBookmark  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Library</span>
+            <BsJournalBookmark className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Library</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -494,8 +494,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <FaRegMessage  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Events</span>
+            <FaRegMessage className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Events</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -512,8 +512,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <CiBellOn  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Bulk Sms And Email</span>
+            <CiBellOn className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Bulk Sms And Email</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -530,8 +530,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <CiCalculator2  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Student Accounting</span>
+            <CiCalculator2 className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Student Accounting</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -548,8 +548,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <MdTab   className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Office Accounting</span>
+            <MdTab className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Office Accounting</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -566,8 +566,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <FaRegEnvelopeOpen className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Message</span>
+            <FaRegEnvelopeOpen className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Message</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -584,8 +584,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <IoPieChartOutline  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Reports</span>
+            <IoPieChartOutline className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Reports</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -602,8 +602,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <MdEmojiPeople  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Alumni</span>
+            <MdEmojiPeople className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Alumni</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
@@ -620,8 +620,8 @@ const Sidebar = () => {
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
-          <IoBagAddOutline  className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span  className="text-md font-bold">Settings</span>
+            <IoBagAddOutline className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
+            <span className="text-md font-bold">Settings</span>
           </div>
           <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
