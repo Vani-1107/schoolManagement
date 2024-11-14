@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.diamond-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #d1d5db; /* Gray border */
+    transform: rotate(45deg); /* Rotate the container to make it diamond-shaped */
+  }
+  
+  .diamond-icon > * {
+    transform: rotate(-45deg); /* Rotate the icon back to keep it upright */
+    font-size: 16px;
+    color: gray;
+  }
+  
+  
