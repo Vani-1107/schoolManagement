@@ -39,6 +39,7 @@ import { MdTab } from "react-icons/md";
 import { IoPieChartOutline } from "react-icons/io5";
 import { MdEmojiPeople } from "react-icons/md";
 import { IoBagAddOutline } from "react-icons/io5";
+import {Link} from 'react-router-dom';
 
 const Sidebar = () => {
   // State to track open sections
@@ -64,7 +65,7 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FiGrid className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span className="text-md font-bold">Dashboard</span>
+            <Link to='/dashboard'><span className="text-md font-bold">Dashboard</span></Link>
           </div>
         </div>
 
@@ -83,8 +84,8 @@ const Sidebar = () => {
         </div>
         {openSections.inventory && (
           <div className="ml-8 text-sm space-y-1">
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
+            <Link to='/product-list'><p className="hover:text-yellow-500 cursor-pointer">Product</p></Link>
+            <p className="hover:text-yellow-500 cursor-pointer">Category</p>
           </div>
         )}
 
