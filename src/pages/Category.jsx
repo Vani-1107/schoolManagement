@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CreateProduct from "../component/ProductRow";
+import CreateCategory from "../component/CategoryRow";
 import { FaRegCopy } from "react-icons/fa";
 import { FaRegFileExcel } from "react-icons/fa";
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -7,9 +7,8 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { RiPrinterLine } from "react-icons/ri";
 import { FaRegEdit } from "react-icons/fa";
 import { CiCircleList } from "react-icons/ci";
-import { MdHome } from "react-icons/md";
 
-const Product = () => {
+const Category = () => {
   const [activeTab, setActiveTab] = useState("Product List");
 
   const products = [
@@ -35,15 +34,14 @@ const Product = () => {
       purchasePrice: 55.0,
       salesPrice: 65.0,
     },
-    // More products here...
+    
   ];
 
   return (
     <div className="pt-16 pl-64 ">
       <div className="flex items-center p-4 gap-3 w-full shadow-lg">
         <div className=" border border-yellow-300 rounded shadow-inner "></div>
-        <div className=' border border-yellow-300 rounded shadow-inner p-1'><MdHome size={24} color='gray' /></div>
-        <div className="text-xl font-semibold">Inventory</div>
+        <div className="text-xl font-semibold">  Inventory</div>
       </div>
       <div className="bg-gray-100 h-[100vh]">
         <div className="p-4">
@@ -63,7 +61,7 @@ const Product = () => {
                     : "text-gray-600"
                 }`}
               >
-                Product List
+                Category List
               </button>
                     </div>
                 </div>
@@ -80,7 +78,7 @@ const Product = () => {
                     : "text-gray-600 "
                 }`}
               >
-                Create Product
+                Add Category
               </button>
                     </div>
               </div>
@@ -91,9 +89,9 @@ const Product = () => {
             {activeTab === "Product List" && (
               <div>
                 {/* Toolbar and Search Bar */}
-                <div className="flex flex-row justify-between mt-10 space-x-4">
+                <div className="flex flex-row justify-between mt-10 ">
                   <div className="flex space-x-1">
-                    <button className="py-1 px-2 border rounded hover:bg-gray-300 bg-gray-200">
+                    {/* <button className="py-1 px-2 border rounded hover:bg-gray-300 bg-gray-200">
                       <FaRegCopy />
                     </button>
                     <button className="py-1 px-2 border rounded hover:bg-gray-300 bg-gray-200">
@@ -107,30 +105,30 @@ const Product = () => {
                     </button>
                     <button className="py-1 px-2 border rounded hover:bg-gray-300 bg-gray-200">
                       <RiPrinterLine />
-                    </button>
+                    </button> */}
                     {/* <button className="p-2 border rounded hover:bg-gray-200">💾</button> */}
                   </div>
-                  <div className="">
+                  {/* <div className="">
                     <input
                       type="text"
                       placeholder="Search..."
                       className="py-2 px-2 w-[16rem] border rounded"
                     />
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Product Table */}
-                <table className="min-w-full bg-white mt-4 shadow-lg rounded-md">
+                <table className=" bg-white mt-4 shadow-lg rounded-md w-[50vw] mx-auto">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
+                      <th className=" py-2 border-r-2 border-gray-300 bg-gray-200 px-4">
                         Sl
                       </th>
                       <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
                         Name
                       </th>
-                      <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
-                        Code
+                      {/* <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
+                        Action
                       </th>
                       <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
                         Category
@@ -149,7 +147,7 @@ const Product = () => {
                       </th>
                       <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
                         Sales Price
-                      </th>
+                      </th> */}
                       <th className="px-4 py-2 border-r-2 border-gray-300 bg-gray-200">
                         Actions
                       </th>
@@ -160,7 +158,7 @@ const Product = () => {
                       <tr key={product.id} className="border-t">
                         <td className="px-4 py-2 border">{index + 1}</td>
                         <td className="px-4 py-2 border">{product.name}</td>
-                        <td className="px-4 py-2 border">{product.code}</td>
+                        {/* <td className="px-4 py-2 border">{product.code}</td>
                         <td className="px-4 py-2 border">{product.category}</td>
                         <td className="px-4 py-2 border">
                           {product.purchaseUnit}
@@ -174,7 +172,7 @@ const Product = () => {
                         </td>
                         <td className="px-4 py-2 border">
                           ${product.salesPrice.toFixed(2)}
-                        </td>
+                        </td> */}
                         <td className="px-4 py-2 border">
                           <button className="text-yellow-500 hover:text-yellow-600 mr-2">
                             ✏️
@@ -203,7 +201,7 @@ const Product = () => {
               </div>
             )}
 
-            {activeTab === "Create Product" && <CreateProduct />}
+            {activeTab === "Create Product" && <CreateCategory />}
           </div>
         </div>
       </div>
@@ -211,4 +209,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Category;

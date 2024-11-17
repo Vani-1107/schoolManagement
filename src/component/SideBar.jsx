@@ -45,7 +45,6 @@ const Sidebar = () => {
   // State to track open sections
   const [openSections, setOpenSections] = useState({});
 
-  // Toggle function for opening/closing sections
   const toggleSection = (section) => {
     setOpenSections((prev) => ({
       ...prev,
@@ -131,7 +130,7 @@ const Sidebar = () => {
 
         {/* Add other sections here following the same structure */}
         <div
-          onClick={() => toggleSection("2 FA Security")}
+          onClick={() => toggleSection("FASecurity")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -139,10 +138,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">2 FA Security</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.FASecurity ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.FASecurity && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -157,10 +156,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Frontend</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Frontend ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Frontend && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -175,10 +174,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Reception</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Reception ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Reception && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -193,17 +192,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Admission</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Admission ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Admission && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Student Details")}
+          onClick={() => toggleSection("StudentDetails")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-2">
@@ -211,10 +210,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Student Details</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.StudentDetails ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.StudentDetails && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -229,10 +228,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Parents</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Parents? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Parents && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -247,17 +246,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Employee</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Employee ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Employee && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Card Management")}
+          onClick={() => toggleSection("CardManagement")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -265,10 +264,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Card Management</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.CardManagement ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.CardManagement && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -283,17 +282,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Certificate</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Certificate ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Certificate && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Human Resource")}
+          onClick={() => toggleSection("HumanResource")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -301,10 +300,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Human Resource</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.HumanResource ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.HumanResource && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -319,17 +318,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Academic</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Acaedemic ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Acaedemic && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Live Class Rooms")}
+          onClick={() => toggleSection("LiveClassRooms")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -337,17 +336,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Live Class Rooms</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.LiveClassRooms ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.LiveClassRooms && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Attachments Book")}
+          onClick={() => toggleSection("AttachmentsBook")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -355,10 +354,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Attachments Book</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.AttachmentsBook ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.AttachmentsBook && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -373,17 +372,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Homework</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Homework ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Homework && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Exam Master")}
+          onClick={() => toggleSection("ExamMaster")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -391,17 +390,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Exam Master</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.ExamMaster ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.ExamMaster && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Online Exam")}
+          onClick={() => toggleSection("OnlineExam")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -409,10 +408,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Online Exam</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.OnlineExam ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.OnlineExam && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -427,10 +426,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Supervision</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Supervision ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Supervision && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -445,17 +444,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Attendance</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Attendance ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Attendance && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Qr Code Attendance")}
+          onClick={() => toggleSection("QrCodeAttendance")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -463,10 +462,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Qr Code Attendance</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.QrCodeAttendance ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.QrCodeAttendance && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -481,10 +480,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Library</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Library ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Library && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -499,17 +498,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Events</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Events ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Events && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Bulk Sms And Email")}
+          onClick={() => toggleSection("BulkSmsAndEmail")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -517,17 +516,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Bulk Sms And Email</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.BulkSmsAndEmail ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.BulkSmsAndEmail && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Student Accounting")}
+          onClick={() => toggleSection("StudentAccounting")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -535,17 +534,17 @@ const Sidebar = () => {
             <span className="text-md font-bold">Student Accounting</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.StudentAccounting ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.StudentAccounting && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
         )}
         <div
-          onClick={() => toggleSection("Office Accounting")}
+          onClick={() => toggleSection("OfficeAccounting")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
@@ -553,10 +552,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Office Accounting</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.OfficeAccounting ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.OfficeAccounting && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -571,10 +570,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Message</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Message ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Message && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -589,10 +588,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Reports</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.Reports ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.Reports && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -607,10 +606,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Alumni</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.alumni ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.alumni && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
@@ -625,10 +624,10 @@ const Sidebar = () => {
             <span className="text-md font-bold">Settings</span>
           </div>
           <span className="text-gray-500">
-            {openSections.customDomain ? "-" : "+"}
+            {openSections.settings ? "-" : "+"}
           </span>
         </div>
-        {openSections.customDomain && (
+        {openSections.settings && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
