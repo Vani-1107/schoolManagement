@@ -56,7 +56,7 @@ function CreateSupplier() {
 
           <div className="mb-4">
             <label className="block text-gray-600 text-sm font-semibold mb-2">
-              Product List *
+              Supplier List *
             </label>
             <input
               type="text"
