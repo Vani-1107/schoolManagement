@@ -66,7 +66,7 @@ const Supplier = () => {
                     <button
                 onClick={() => setActiveTab("Supplier List")}
                 className={`py-2 px-2 ${
-                  activeTab === "Store List"
+                  activeTab === "Supplier List"
                     ? "border-b-2 border-yellow-500 text-yellow-600"
                     : "text-gray-600"
                 }`}
