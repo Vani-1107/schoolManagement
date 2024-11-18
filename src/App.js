@@ -9,6 +9,8 @@ import SubscriptionPage from './pages/Subscription';
 import CustomDomain from './pages/Custom';
 import Store from './pages/Store';
 import Supplier from './pages/Supplier';
+import TwoFactorAuthPage from './pages/TwoFactor';
+import TwoFASetting from './pages/TwoFASettings';
 
 function App() {
   return (
@@ -16,13 +18,15 @@ function App() {
        <Navbar />
        <Sidebar />
       <Routes>
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/' element={<Dashboard/>}/>
         <Route path="/product-list" element={<Product />} />
         <Route path="/category" element={<Category />} />
         <Route path="/subscription" element={<SubscriptionPage/>}/>
         <Route path="/custom" element={<CustomDomain/>}/>
         <Route path='/store' element={<Store/>}/>
         <Route path='/supplier' element={<Supplier/>}/>
+        <Route path='/twofactor' element={<TwoFactorAuthPage/>}/>
+        <Route path='/twofactorsettings' element={<TwoFASetting/>}/>
       </Routes>
     </div>
   );

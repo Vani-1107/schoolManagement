@@ -36,7 +36,7 @@ function Dashboard() {
   return (
     <div className='pt-16 pl-64'>
       <div className='flex items-center p-4 gap-3 w-full shadow-lg'>
-        <div className=' border border-yellow-300 rounded shadow-inner '><MdHome size={24} color='gray' /></div>
+        <div className=' border border-yellow-300 rounded shadow-inner p-1 '><MdHome size={24} color='gray' /></div>
         <div className='text-xl font-semibold'>Icon School & College Branch Dashboard</div>
       </div>
       <div className='bg-gray-100'>
