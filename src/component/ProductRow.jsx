@@ -129,7 +129,7 @@ function CreateProduct() {
           <div className="text-center mt-6 ">
             <button
               type="submit"
-              className="px-16 py-1 rounded-lg font-semibold hover:bg-blue-700 text-gray-500  border-2"
+              className="px-16 py-1 rounded-lg font-semibold hover:bg-gray-200 text-gray-500  border-2"
             >
               + Save
             </button>

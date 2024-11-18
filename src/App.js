@@ -12,7 +12,8 @@ import Supplier from './pages/Supplier';
 import TwoFactorAuthPage from './pages/TwoFactor';
 import TwoFASetting from './pages/TwoFASettings';
 import Unit from './pages/Unit';
-import Purchase from './pages/Purchase';
+import PurchaseList from './pages/Purchase';
+import Sales from './pages/Sales';
 
 function App() {
   return (
@@ -30,7 +31,9 @@ function App() {
         <Route path='/twofactor' element={<TwoFactorAuthPage/>}/>
         <Route path='/twofactorsettings' element={<TwoFASetting/>}/>
         <Route path='/unit' element={<Unit/>}/>
-        <Route path='/purchase' element={<Purchase/>}/>
+        <Route path='/purchase' element={<PurchaseList/>}/>
+        <Route path='/sales' element={<Sales/>}/>
+        
       </Routes>
     </div>
   );

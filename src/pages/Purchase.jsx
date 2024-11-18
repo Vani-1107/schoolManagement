@@ -10,9 +10,9 @@ import { CiCircleList } from "react-icons/ci";
 import { MdHome } from "react-icons/md";
 import AddPurchase from '../component/PurchaseRow';
 
-function Purchase() {
+function Sales() {
     const [activeTab, setActiveTab] = useState("Purchase List");
-    const purchases = [
+    const sales= [
         {
             billNo: "0001",
             supplierName: "Innovatech Solutions",
@@ -32,7 +32,7 @@ function Purchase() {
             purchaseDate: "30.Jun.2024",
             netPayable: 1850.0,
             paid: 1850.0,
-            due: 0.0,
+            due: 0.0, 
             remarks: "",
         },
         {
@@ -65,8 +65,10 @@ function Purchase() {
                 <div className=' border border-yellow-300 rounded shadow-inner p-1'><MdHome size={24} color='gray' /></div>
                 <div className="text-xl font-semibold">Inventory</div>
             </div>
-
-            <div className="flex space-x-4 mt-4 border-b border-gray-300 pt-2 pl-4">
+            <div className="min-h-screen bg-gray-200">
+            <div className="p-4">
+            <div className="bg-white p-6 rounded shadow">
+            <div className="flex space-x-4 mt-4 border-b border-gray-300 p pl-4 ">
                 <div className="flex flex-row items-center justify-start">
                     <div className="text-xl ">
                     <CiCircleList />
@@ -149,26 +151,26 @@ function Purchase() {
                         </tr>
                     </thead>
                     <tbody>
-                        {purchases.map((purchase, index) => (
+                        {sales.map((sales, index) => (
                             <tr key={index}>
-                                <td className="px-4 py-2 border">{purchase.billNo}</td>
-                                <td className="px-4 py-2 border">{purchase.supplierName}</td>
-                                <td className="px-4 py-2 border">{purchase.purchaseStatus}</td>
+                                <td className="px-4 py-2 border">{sales.billNo}</td>
+                                <td className="px-4 py-2 border">{sales.supplierName}</td>
+                                <td className="px-4 py-2 border">{sales.purchaseStatus}</td>
                                 <td className="px-4 py-2 border">
                                     <span
-                                        className={`px-2 py-1 rounded text-black ${purchase.paymentStatus === "Total Paid"
-                                            ? "border border-green-500"
-                                            : "border border-blue-500"
+                                        className={`px-2 py-1 rounded text-green ${sales.paymentStatus === "Total Paid"
+                                            ? "border border-green-500 text-green-400 font-semibold"
+                                            : "border border-blue-500 text-blue-600 font-semibold"
                                             }`}
                                     >
-                                        {purchase.paymentStatus}
+                                        {sales.paymentStatus}
                                     </span>
                                 </td>
-                                <td className="px-4 py-2 border">{purchase.purchaseDate}</td>
-                                <td className="px-4 py-2 border">${purchase.netPayable.toFixed(2)}</td>
-                                <td className="px-4 py-2 border">${purchase.paid.toFixed(2)}</td>
-                                <td className="px-4 py-2 border">${purchase.due.toFixed(2)}</td>
-                                <td className="px-4 py-2 border">{purchase.remarks}</td>
+                                <td className="px-4 py-2 border">{sales.purchaseDate}</td>
+                                <td className="px-4 py-2 border">${sales.netPayable.toFixed(2)}</td>
+                                <td className="px-4 py-2 border">${sales.paid.toFixed(2)}</td>
+                                <td className="px-4 py-2 border">${sales.due.toFixed(2)}</td>
+                                <td className="px-4 py-2 border">{sales.remarks}</td>
                                 <td className="px-4 py-2 border">
                                     <button className="text-yellow-500 hover:text-yellow-600 mr-2">
                                         ✏️
@@ -189,7 +191,10 @@ function Purchase() {
 
             {activeTab === "Add Purchase" && <AddPurchase/>}
         </div>
+        </div>
+        </div>
+        </div>
     )
 }
 
-export default Purchase
+export default Sales;
