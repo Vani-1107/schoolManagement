@@ -7,6 +7,8 @@ import Product from './pages/Product';
 import Category from './pages/Category';
 import SubscriptionPage from './pages/Subscription';
 import CustomDomain from './pages/Custom';
+import Store from './pages/Store';
+import Supplier from './pages/Supplier';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/category" element={<Category />} />
         <Route path="/subscription" element={<SubscriptionPage/>}/>
         <Route path="/custom" element={<CustomDomain/>}/>
+        <Route path='/store' element={<Store/>}/>
+        <Route path='/supplier' element={<Supplier/>}/>
       </Routes>
     </div>
   );
