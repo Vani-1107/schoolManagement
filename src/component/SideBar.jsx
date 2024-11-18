@@ -85,6 +85,8 @@ const Sidebar = () => {
           <div className="ml-8 text-sm space-y-1">
             <Link to='/product-list'><p className="hover:text-yellow-500 cursor-pointer">Product</p></Link>
             <p className="hover:text-yellow-500 cursor-pointer">Category</p>
+            <Link to='/store'><p className="hover:text-yellow-500 cursor-pointer">Store</p></Link>
+            <Link to='/supplier'><p className="hover:text-yellow-500 cursor-pointer">Supplier</p></Link>
           </div>
         )}
 
