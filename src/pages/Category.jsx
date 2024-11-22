@@ -7,6 +7,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 import { RiPrinterLine } from "react-icons/ri";
 import { FaRegEdit } from "react-icons/fa";
 import { CiCircleList } from "react-icons/ci";
+import { MdHome } from "react-icons/md";
 
 const Category = () => {
   const [activeTab, setActiveTab] = useState("Product List");
@@ -40,7 +41,7 @@ const Category = () => {
   return (
     <div className="pt-16 pl-64 ">
       <div className="flex items-center p-4 gap-3 w-full shadow-lg">
-        <div className=" border border-yellow-300 rounded shadow-inner "></div>
+        <div className=" border border-yellow-300 rounded  p-1 text-xl "><MdHome/></div>
         <div className="text-xl font-semibold">  Inventory</div>
       </div>
       <div className="bg-gray-100 h-[100vh]">

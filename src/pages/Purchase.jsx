@@ -158,7 +158,7 @@ function Sales() {
                                 <td className="px-4 py-2 border">{sales.purchaseStatus}</td>
                                 <td className="px-4 py-2 border">
                                     <span
-                                        className={`px-2 py-1 rounded text-green ${sales.paymentStatus === "Total Paid"
+                                        className={`px-2 py-1 rounded  ${sales.paymentStatus === "Total Paid"
                                             ? "border border-green-500 text-green-400 font-semibold"
                                             : "border border-blue-500 text-blue-600 font-semibold"
                                             }`}

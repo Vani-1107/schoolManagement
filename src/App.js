@@ -14,6 +14,10 @@ import TwoFASetting from './pages/TwoFASettings';
 import Unit from './pages/Unit';
 import PurchaseList from './pages/Purchase';
 import Sales from './pages/Sales';
+import Issues from './pages/Issue';
+import Admission from './pages/Admission';
+import OnlineAdmission from './pages/OnlineAdmission';
+import MultiAdmission from './pages/MultiAdmission';
 
 function App() {
   return (
@@ -33,9 +37,12 @@ function App() {
         <Route path='/unit' element={<Unit/>}/>
         <Route path='/purchase' element={<PurchaseList/>}/>
         <Route path='/sales' element={<Sales/>}/>
-        
+        <Route path='/issues' element={<Issues/>}/>
+        <Route path='/admission' element={<Admission/>}/>
+        <Route path='/onlineadmission' element={<OnlineAdmission/>}/>
+        <Route path='/multiadmission' element={<MultiAdmission/>}/>
       </Routes>
-    </div>
+    </div> 
   );
 }
 
