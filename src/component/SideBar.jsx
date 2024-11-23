@@ -22,6 +22,7 @@ import { TiUserAdd } from "react-icons/ti";
 import { IoClipboardOutline } from "react-icons/io5";
 import { AiOutlineSpotify } from "react-icons/ai";
 import { MdOutlineScreenshotMonitor } from "react-icons/md";
+import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import { SlEarphonesAlt } from "react-icons/sl";
 import { IoCloudDownloadOutline } from "react-icons/io5";
@@ -39,7 +40,7 @@ import { MdTab } from "react-icons/md";
 import { IoPieChartOutline } from "react-icons/io5";
 import { MdEmojiPeople } from "react-icons/md";
 import { IoBagAddOutline } from "react-icons/io5";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   // State to track open sections
@@ -64,7 +65,9 @@ const Sidebar = () => {
         >
           <div className="flex items-center space-x-4">
             <FiGrid className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <Link to='/dashboard'><span className="text-md font-bold">Dashboard</span></Link>
+            <Link to="/">
+              <span className="text-md font-bold">Dashboard</span>
+            </Link>
           </div>
         </div>
 
@@ -82,55 +85,92 @@ const Sidebar = () => {
           </span>
         </div>
         {openSections.inventory && (
-          <div className="ml-8 text-sm space-y-1">
-            <Link to='/product-list'><p className="hover:text-yellow-500 cursor-pointer">Product</p></Link>
-            <p className="hover:text-yellow-500 cursor-pointer">Category</p>
-            <Link to='/store'><p className="hover:text-yellow-500 cursor-pointer">Store</p></Link>
-            <Link to='/supplier'><p className="hover:text-yellow-500 cursor-pointer">Supplier</p></Link>
-            <Link to='/unit'><p className="hover:text-yellow-500 cursor-pointer">Unit</p></Link>
-            <Link to='/purchase'><p className="hover:text-yellow-500 cursor-pointer">Purchase</p></Link>
+          <div className="ml-8 text-sm space-y-4">
+            <Link to="/product-list">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1 ">
+               <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span> 
+               <span className="font-semibold text-md">Product</span> 
+              </p>
+            </Link>
+            <Link to="/category">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+               <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span> 
+               <span className="font-semibold text-md ">Category</span>
+              </p>{" "}
+            </Link>
+            <Link to="/store">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Store</span>
+                
+                </p>
+            </Link>
+            <Link to="/supplier">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="font-semibold text-md">Supplier</span>
+                </p>
+            </Link>
+            <Link to="/unit">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="font-semibold text-md">Unit</span>
+                </p>
+            </Link>
+            <Link to="/purchase">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Purchase</span>
+                </p>
+            </Link>
           </div>
         )}
 
         {/* Subscription */}
         <div
-          onClick={() => toggleSection("subscription")}
+          // onClick={() => toggleSection("subscription")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
             <FaRegCreditCard className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span className="text-md font-bold">Subscription</span>
+            <Link to="subscription">
+              {" "}
+              <span className="text-md font-bold">Subscription</span>
+            </Link>
           </div>
-          <span className="text-gray-500">
+          {/* <span className="text-gray-500">
             {openSections.subscription ? "-" : "+"}
-          </span>
+          </span> */}
         </div>
-        {openSections.subscription && (
+        {/* {openSections.subscription && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
           </div>
-        )}
+        )} */}
 
         {/* Custom Domain */}
         <div
-          onClick={() => toggleSection("customDomain")}
+          // onClick={() => toggleSection("customDomain")}
           className="flex items-center justify-between cursor-pointer p-2 hover:bg-gray-200 rounded border-b-2"
         >
           <div className="flex items-center space-x-4">
             <TbWorldWww className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
-            <span className="text-md font-bold">Custom Domain</span>
+            <Link to="custom">
+              <span className="text-md font-bold">Custom Domain</span>
+            </Link>
           </div>
-          <span className="text-gray-500">
+          {/* <span className="text-gray-500">
             {openSections.customDomain ? "-" : "+"}
-          </span>
+          </span> */}
         </div>
-        {openSections.customDomain && (
+        {/* {openSections.customDomain && (
           <div className="ml-8 text-sm space-y-1">
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
             <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
-          </div>
-        )}
+          </div> */}
+        {/* // )} */}
 
         {/* Add other sections here following the same structure */}
         <div
@@ -141,14 +181,26 @@ const Sidebar = () => {
             <FaFingerprint className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
             <span className="text-md font-bold">2 FA Security</span>
           </div>
-          <span className="text-gray-500">
+          <span className="text-gray-500 space-y-4">
             {openSections.FASecurity ? "-" : "+"}
           </span>
         </div>
         {openSections.FASecurity && (
           <div className="ml-8 text-sm space-y-1">
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
+            <Link to="twofactor">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">My 2FA Setup</span>
+                
+              </p>
+            </Link>
+            <Link to="twofactorsettings">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1" >
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Settings</span>
+              </p>
+            </Link>
           </div>
         )}
         <div
@@ -195,14 +247,50 @@ const Sidebar = () => {
             <FaRegPenToSquare className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
             <span className="text-md font-bold">Admission</span>
           </div>
-          <span className="text-gray-500">
+          <span className="text-gray-500 space-y-4">
             {openSections.Admission ? "-" : "+"}
           </span>
         </div>
         {openSections.Admission && (
-          <div className="ml-8 text-sm space-y-1">
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
+          <div className="ml-8 text-sm ">
+            <Link to="admission">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Create Admission</span>
+                
+              </p>
+            </Link>
+            <Link to="onlineadmission">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Online Admission</span>
+                
+              </p>
+            </Link>
+            <Link to="multiadmission">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Multi Classes</span>
+                
+              </p>
+            </Link>
+            <Link to="multiimport">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Multiple Import</span>
+                
+              </p>
+            </Link>
+            <Link to="adcategory">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Category</span>
+              </p>
+            </Link>
           </div>
         )}
         <div
@@ -213,14 +301,27 @@ const Sidebar = () => {
             <GiGraduateCap className="text-yellow-500 bg-slate-100 shadow-md text-2xl" />
             <span className="text-md font-bold">Student Details</span>
           </div>
-          <span className="text-gray-500">
+          <span className="text-gray-500 space-y-4">
             {openSections.StudentDetails ? "-" : "+"}
           </span>
         </div>
         {openSections.StudentDetails && (
           <div className="ml-8 text-sm space-y-1">
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 1</p>
-            <p className="hover:text-yellow-500 cursor-pointer">Sub-item 2</p>
+            <Link to="studentlist">
+              {" "}
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Student List</span>
+                
+              </p>
+            </Link>
+            <Link to="studentdeactivate">
+              <p className="hover:text-yellow-500 cursor-pointer flex flex-row space-x-1">
+                <span className="text-lg text-yellow-500"><IoMdArrowDroprightCircle /></span>
+                <span className="text-md font-semibold">Login Deactivate</span>
+                
+              </p>
+            </Link>
           </div>
         )}
         <div
@@ -232,7 +333,7 @@ const Sidebar = () => {
             <span className="text-md font-bold">Parents</span>
           </div>
           <span className="text-gray-500">
-            {openSections.Parents? "-" : "+"}
+            {openSections.Parents ? "-" : "+"}
           </span>
         </div>
         {openSections.Parents && (

@@ -41,10 +41,10 @@ function Dashboard() {
       </div>
       <div className='bg-gray-100'>
         <div className='p-4'>
-          <div className='w-full p-3 bg-red-100 rounded-md border border-red-300'>
+          {/* <div className='w-full p-3 bg-red-100 rounded-md border border-red-300'>
             <div className='flex gap-2 items-start'> <span className='pt-1'><IoIosWarning size={16} color='maroon' /></span>  <div className='text-red-900 text-sm'>Demo data reset every 30 minute. Any type of image/logo upload is disabled for demo version. Since many users are simultaneously testing the demo, you may find some inconsistencies, If so, you can check it again after a while.</div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className='p-4 '>

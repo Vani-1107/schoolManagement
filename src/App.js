@@ -18,6 +18,10 @@ import Issues from './pages/Issue';
 import Admission from './pages/Admission';
 import OnlineAdmission from './pages/OnlineAdmission';
 import MultiAdmission from './pages/MultiAdmission';
+import MultiImport from './pages/MultiImport';
+import AdCategory from './pages/AdmissionCategory';
+import StudentList from './pages/StudentList';
+import StudentDeactivate from './pages/StudentDeactivate';
 
 function App() {
   return (
@@ -41,6 +45,10 @@ function App() {
         <Route path='/admission' element={<Admission/>}/>
         <Route path='/onlineadmission' element={<OnlineAdmission/>}/>
         <Route path='/multiadmission' element={<MultiAdmission/>}/>
+        <Route path='/multiimport' element={<MultiImport/>}/>
+        <Route path='/adcategory' element={<AdCategory/>}/>
+        <Route path='/studentlist' element={<StudentList/>}/>
+        <Route path='/studentdeactivate' element={<StudentDeactivate/>}/>
       </Routes>
     </div> 
   );
